@@ -45,9 +45,30 @@ vCenter on 443.
 - example : Azure Network Watcher, you create a packet capture.
 > Packet Capture can inspect 18000 seconds (5 hours) Network Status.
 
+## Network Watcher packet capture
+- allows you to create capture sessions to track traffic to and from
+a virtual machine. Filters are provided for the capture session to ensure you capture only the traffic you want. Packet capture helps to diagnose network anomalies, both reactively, and proactively.
+
+##  Network Watcher Connection Monitor 
+- enables you to configure and track connection reachability,
+latency, and network topology changes. If there is an issue, it tells you why it occurred and how to
+fix it.
+
 ## implement a Service Bus queue that guarantees first-in-first-out (FIFO) delivery of messages. 
 - Enable sessions.
 > Through the use of messaging sessions you can guarantee ordering of messages, that is first-infirst-out (FIFO) delivery of messages.
 
 ## Enable Floating IP.
 > configure an Azure internal load balancer as a listener for the availability group.
+
+## (Name server)NS record for the zone
+> delegate a subdomain named research.adatum.com to a different DNS server 
+
+
+## load balancer 
+- Basic tier  : A load balancer is restricted to a single availability set, virtual machine scale set, or a single machine.
+- Standard tier : can span any virtual machine in a single virtual network, including blends of scale sets, availability sets, and machines.
+
+## Azure application gateway
+> a web traffic load balancer that enables you to manage traffic to your web applications. it provides features such as session affinity,SSL offload，and cooki-based affinity to enable efficient distribution of traffic to multiple servers. 
+> A useful tool for managing and optimizing the traffic to your web applications in Azure.
