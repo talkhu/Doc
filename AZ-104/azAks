@@ -1,0 +1,27 @@
+## 325 deploy App1 to Cluster
+- Run the az acr build command.
+> You should sign in and push a container image to Container Registry.  Run the az acr build command to build and push the container image.  
+> `az acr build --image contoso-website --registry $ACR_NAME --file Dockerfile .`
+
+## 440 For the AKS cluster, you need to choose a network type that will support App1.
+- You plan to deploy an Azure Kubernetes Service (AKS) cluster to support an app named App1.
+On- premises clients connect to App1 by using the IP address of the pod.
+
+
+> 1. Correct option: Azure Container Networking Interface (CNI)
+  >> With Azure CNI, every pod gets an IP address from the subnet and can be accessed directly.  These IP addresses must be unique across your network space.
+
+> 2. Incorrect option: The kubenet networking is the default configuration for AKS cluster creation. With kubenet, nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes.  Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network.
+
+### 450 To deploy a YAML file, the command is:
+> kubectl apply -f <file_name>.yaml
+
+### some aks command
+A: kubectl command is used for configuring Kubernetes and not AKS cluster.
+B: The az aks command is used for the AKS cluster configuration.
+C: Set-AzVm cmdlet is used for VMs.
+D: Azure portal, under node pools, press scale, then choose auto scale.
+E: Set-AzAks, creates or updates an AKS cluster, the correct cmdlet is Set-AzAksCluster.
+
+### 28 create a docker image that need configure a storage service for Container1. 
+> Azure Files :  Azure file shares can be used as persistent volumes for stateful containers. Containers deliver "build once, run anywhere" capabilities that enable developers to accelerate innovation. For the containers that access raw data at every start, a shared file system is required to allow these containers to access the file system no matter which instance they run on.
